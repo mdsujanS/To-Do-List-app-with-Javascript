@@ -85,5 +85,17 @@ li{
 
 li:hover{
     background-color: #f9f9f9;
-    
+
 }
+
+.Deletebutton, .Updatebutton{
+    background-color: #077bcf;
+    cursor: pointer;
+    color:#ccc;
+
+}
+
+.Deletebutton, .Updatebutton:hover{
+    color: black;
+}
+
