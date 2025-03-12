@@ -92,10 +92,17 @@ li:hover{
     background-color: #077bcf;
     cursor: pointer;
     color:#ccc;
+    transition: background 0.3s;
 
 }
 
-.Deletebutton, .Updatebutton:hover{
+.Deletebutton:hover{
     color: black;
+    background-color: rgb(234, 213, 213);
+}
+.Updatebutton:hover{
+    color: black;
+    background-color: rgb(234, 213, 213);
+
 }
 
