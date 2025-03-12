@@ -5,10 +5,12 @@ function loadTask(){
     task.foreach(ta => addTaskToDome(ta));
 }
 
+// Add new Task
 function addTask(){
     let inputText = document.getElementById('inputTask');
     let text = inputText.value;
-    console.log(text);
+
+    // console.log(text);
 
     addTaskToDome(text);
     saveTask(text);
@@ -29,7 +31,9 @@ function saveTask(input_text){
 
 function addTaskToDome(input_text){
     let ul = document.getElementById('List-task');
-    console.log(ul);
+
+    // console.log(ul);
+
     let li = document.createElement('li');
     li.innerHTML = `
         <span> ${input_text}</span>
@@ -42,6 +46,7 @@ function addTaskToDome(input_text){
 
 }
 
+// Delete existing task 
 function deleteTask(element){
     let li = element.parentElement.parentElement;
     let text = li.firstElementChild.innerText;
@@ -54,6 +59,7 @@ function deleteTask(element){
 
 }
 
+// Update existing task
 function UpdateTask(element){
     let li = element.parentElement.parentElement;
     let child_li  = li.firstElementChild;
@@ -72,6 +78,5 @@ function UpdateTask(element){
 
 
     }
-
 
 }
